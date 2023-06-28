@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $default-font;
+  color: $text-color;
+}
+body {
+  background: $color-black;
+  min-height: 100vh;
+}
+main {
+  background: url("../assets/Cubesbg.png"), url("../assets/Swirlbg.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+.pink-blue-gradient-text {
+  background-image: radial-gradient(circle, $color-blue, $color-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blue-pink-gradient-text {
+  background-image: radial-gradient(circle, $color-pink, $color-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 80vw;
+  padding: 1rem 0;
+  @media (max-width: 768px) {
+    max-width: 100vw;
+    padding: 1rem;
+  }
+}
+
+footer {
+  padding: 2rem 5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+}
